@@ -40,8 +40,11 @@ WORKDIR=`pwd`
 echo $WORKDIR
 ```
 
-## conda install -c bioconda metaphlan
+## MetaPhlAn installation
 HUMAnN provides organism-specific community functional profiles, and to do so it first detects the organisms present in a community using MetaPhlAn, which makes MetaPhlAn a pre-requisite for HUMAnN
+```
+conda install -c bioconda metaphlan
+```
 ```
 mkdir -p $WORKDIR/data/humann/dbs
 humann_databases --download chocophlan DEMO $WORKDIR/data/humann/dbs
