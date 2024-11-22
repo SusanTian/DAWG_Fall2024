@@ -2,6 +2,10 @@
 HUMAnN (HMP Unified Metabolic Analysis Network) is a computational tool designed for precise and efficient profiling of microbial metabolic pathways and molecular functions using metagenomic or metatranscriptomic sequencing data. It is versatile and can be applied to analyze any microbial community, not limited to the human microbiome.
 Please refer to the original [HUMAnN](https://huttenhower.sph.harvard.edu/humann) page for more information. 
 
+HUMAnN analyzes metagenomic or metatranscriptomic sequencing data to profile the functional composition of microbial communities. 
+It begins by aligning quality-controlled reads against a comprehensive nucleotide database, such as ChocoPhlAn, to map reads to microbial gene families. Reads that fail to map are aligned to a translated search database like UniRef90 to capture additional functional information. 
+Gene family abundances are then quantified and normalized, often expressed as copies per million (CPM). These abundances can be regrouped into broader functional categories, such as MetaCyc reactions or pathways, to provide a high-level view of community function. 
+
 ![HUMAnN Workflow](https://github.com/SusanTian/DAWG_Fall2024/blob/main/humann_workflow.png)
 
 # HUMAnN 3.0 Installation Guide
